@@ -43,6 +43,12 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
+        'mongodb' => [
+            'driver' => 'mongodb',
+              'dsn' => env('mongodb+srv://pragyagupta02:mPEfrRJ5b62Ex9ji@cluster0.h8qb2yb.mongodb.net/'),
+            'database' => 'moviesquest',
+            ],
+
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
